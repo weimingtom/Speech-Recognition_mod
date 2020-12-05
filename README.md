@@ -11,12 +11,13 @@ calculate mfcc
 deep learning model traning and recognition, using tf.keras    
 
 ## How to run for Baidu AIStudio   
+```
 $ pip install tensorflow-cpu  
 $ python  
->>> import tensorflow as tf  
->>> tf.__version__  
->>> exit()  
-$ cd
+import tensorflow as tf  
+tf.__version__  
+exit()  
+$ cd  
 $ wget http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz  
 $ mkdir ./speech_commands  
 $ tar xzf speech_commands_v0.01.tar.gz -C ./speech_commands   
@@ -37,6 +38,11 @@ Epoch 1/50
 134/134 - 3s 22ms/step - loss: 0.4158 - accuracy: 0.9055  
 Test loss: 0.4157963693141937, test accuracy: 90.54656624794006  
 (run about 35 minutes, generate modelf.h5)  
+$ cd ../server  
+$ cp ../local/model.h5 .  
+$ cp ../local/label_data.json .  
+$ python keyword_spotting_service.py tests/down.wav   
+```
 
 ## Original README  
 1) local/classifier/data_preparation.py -> to prepare the data 
