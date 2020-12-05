@@ -21,6 +21,7 @@ $ cd
 $ wget http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz  
 $ mkdir ./speech_commands  
 $ tar xzf speech_commands_v0.01.tar.gz -C ./speech_commands   
+$ mv Speech-Recognition_mod Speech-Recognition  
 $ cd Speech-Recognition  
 $ cd local  
 $ python data_preparation.py  
