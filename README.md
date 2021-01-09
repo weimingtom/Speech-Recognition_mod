@@ -7,7 +7,7 @@ My mod of Speech-Recognition
 ## Dependencies  
 * Xubuntu 20.04 64bit, or use Baidu AI Studio    
 * Python 3.8  
-$ sudo apt-get install python3 python3-pip  
+$ sudo apt-get install python3 python3-pip python-is-python3    
 * librosa  
 calculate mfcc    
 $ pip3 install librose  
