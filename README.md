@@ -7,8 +7,10 @@ My mod of Speech-Recognition
 ## Dependencies  
 * Xubuntu 20.04 64bit, or use Baidu AI Studio    
 * Python 3.8  
+$ sudo apt-get install python3 python3-pip  
 * librosa  
 calculate mfcc    
+$ pip3 install librose  
 * tensorflow-cpu 2.3.1 (without AVX2)      
 deep learning model traning and recognition, using tf.keras    
 $ pip3 install tensorflow-cpu==2.3.1  
