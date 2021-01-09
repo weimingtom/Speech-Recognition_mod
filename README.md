@@ -5,7 +5,7 @@ My mod of Speech-Recognition
 * https://github.com/iamlekh/Speech-Recognition  
 
 ## Dependencies  
-* Xubuntu 20.04 64bit  
+* Xubuntu 20.04 64bit, or use Baidu AI Studio    
 * Python 3.8  
 * librosa  
 calculate mfcc    
