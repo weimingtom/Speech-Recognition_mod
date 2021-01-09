@@ -5,10 +5,12 @@ My mod of Speech-Recognition
 * https://github.com/iamlekh/Speech-Recognition  
 
 ## Dependencies  
+* Python 3.8  
 * librosa  
 calculate mfcc    
-* tensorflow-cpu  
+* tensorflow-cpu 2.3.1 (without AVX2)      
 deep learning model traning and recognition, using tf.keras    
+$ pip3 install tensorflow-cpu==2.3.1  
 
 ## How to run for Baidu AIStudio   
 ```
@@ -27,7 +29,7 @@ $ cd local
 $ python data_preparation.py  
 (run about 13 minutes, generate data.json and label_data.json)  
 $ cat label_data.json  
-$ pip install tensorflow-cpu  
+$ pip install tensorflow-cpu==2.3.1    
 $ pip list  
 tensorflow-cpu         2.3.1  
 $ python model_training.py    
